@@ -70,6 +70,11 @@ namespace Bitstamp.Client.Websocket.Files
         {
         }
 
+        public void Send(ArraySegment<byte> message)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual Task SendInstant(string message)
         {
             return Task.CompletedTask;
